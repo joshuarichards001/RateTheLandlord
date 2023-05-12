@@ -37,7 +37,7 @@ function RatingsRadio({title, rating, setRating, tooltip}: Props) {
 									checked
 										? 'bg-teal-600 border-transparent text-white hover:bg-teal-700'
 										: 'bg-white border-gray-200 text-gray-900 hover:bg-gray-50',
-									'border rounded-md py-3 px-3 flex items-center justify-center text-sm font-medium uppercase sm:flex-1',
+									'border rounded-md py-3 px-3 flex items-center justify-center text-sm font-medium uppercase sm:flex-1 cursor-pointer',
 								)
 							}
 						>

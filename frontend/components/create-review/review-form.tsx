@@ -257,7 +257,7 @@ function ReviewForm(): JSX.Element {
 										name="country"
 										required
 										onChange={(e) => setCountry(e.target.value)}
-										className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+										className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm cursor-pointer"
 									>
 										{country_codes.map((country) => {
 											if (country === 'CA') {
@@ -314,7 +314,7 @@ function ReviewForm(): JSX.Element {
 										name="region"
 										required
 										onChange={(e) => setProvince(e.target.value)}
-										className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+										className="block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm cursor-pointer"
 									>
 										{country === 'CA'
 											? provinces.map((province) => {
@@ -477,7 +477,7 @@ function ReviewForm(): JSX.Element {
 								type="checkbox"
 								checked={disclaimerOne}
 								onChange={() => setDisclaimerOne((p) => !p)}
-								className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+								className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 cursor-pointer"
 							/>
 						</div>
 						<label htmlFor="terms" className="text-sm text-gray-500">
@@ -493,7 +493,7 @@ function ReviewForm(): JSX.Element {
 								type="checkbox"
 								checked={disclaimerTwo}
 								onChange={() => setDisclaimerTwo((p) => !p)}
-								className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+								className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 cursor-pointer"
 							/>
 						</div>
 						<label htmlFor="terms" className="text-sm text-gray-500">
@@ -511,7 +511,7 @@ function ReviewForm(): JSX.Element {
 								type="checkbox"
 								checked={disclaimerThree}
 								onChange={() => setDisclaimerThree((p) => !p)}
-								className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
+								className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 cursor-pointer"
 							/>
 						</div>
 						<label htmlFor="terms" className="text-sm text-gray-500">
